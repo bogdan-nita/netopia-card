@@ -1,11 +1,13 @@
 {
-  "name": "netopia-card",
-  "version": "1.0.6",
+  "name": "@bogdan-nita/netopia-card",
+  "version": "1.0.8",
+  "types": "index.d.ts",
   "description": "Improved Netopia card gateway library",
   "main": "index.js",
   "files": [
+    "functions",
     "index.js",
-    "functions"
+    "index.d.ts"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
