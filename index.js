@@ -356,4 +356,4 @@ class Netopia {
   }
 }
 
-module.exports = Netopia;
+exports.Netopia = Netopia;

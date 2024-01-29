@@ -1,4 +1,4 @@
-type NetopiaOptions = {
+export type NetopiaOptions = {
   signature?: string;
   publicKey?: string;
   privateKey?: string;
@@ -7,7 +7,7 @@ type NetopiaOptions = {
   sandbox?: boolean;
 };
 
-type ClientData = {
+export type ClientData = {
   billing: {
     firstName: string;
     lastName: string;
@@ -36,27 +36,27 @@ type ClientData = {
   };
 };
 
-type SplitPayment = {
+export type SplitPayment = {
   firstDestinationId: string;
   firstDestinationAmount: number;
   secondDestinationId: string;
   secondDestinationAmount: number;
 };
 
-type PaymentData = {
+export type PaymentData = {
   orderId: string;
   amount: number;
   currency: string;
   details: string;
 };
 
-type Request = {
+export type Request = {
   url: string;
   env_key: string;
   data: string;
 };
 
-declare class Netopia {
+export declare class Netopia {
   constructor(options?: NetopiaOptions);
 
   setClientBillingData(data: ClientData['billing']): void;
@@ -68,5 +68,3 @@ declare class Netopia {
   confirmPayment(env_key: string, data: string): Promise<any>;
   validatePayment(env_key: string, data: string): Promise<any>;
 }
-
-export = Netopia;
