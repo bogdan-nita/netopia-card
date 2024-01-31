@@ -7,6 +7,8 @@ export type NetopiaOptions = {
   sandbox?: boolean;
 };
 
+export type BillingData = ClientData['billing'];
+export type ShippingData = ClientData['shipping'];
 export type ClientData = {
   billing: {
     firstName: string;
@@ -35,6 +37,7 @@ export type ClientData = {
     iban: string;
   };
 };
+
 
 export type SplitPayment = {
   firstDestinationId: string;
