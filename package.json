@@ -1,6 +1,6 @@
 {
   "name": "@bogdan-nita/netopia-card",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "types": "index.d.ts",
   "description": "Improved Netopia card gateway library",
   "main": "index.js",
