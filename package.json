@@ -1,6 +1,6 @@
 {
   "name": "@bogdan-nita/netopia-card",
-  "version": "1.1.14",
+  "version": "1.1.16",
   "types": "index.d.ts",
   "description": "Improved Netopia card gateway library",
   "main": "index.js",
@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm version patch --force && npm publish"
+    "pub": "npm version patch --force && npm publish"
   },
   "keywords": [
     "netopia",
